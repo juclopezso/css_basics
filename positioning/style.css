@@ -1,0 +1,71 @@
+/*** Box model ***/
+.box-model {
+  width: 30%;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid black;
+  /* block to a makes them work as p */
+  /* display: block; */
+  /* inline-block makes them work as inline and blocks at the same time */
+  display: inline-block;
+}
+
+/*** Normal document ***/
+.normal-document {
+  padding: 20px;
+  background: #eee;
+  font-family: arial;
+  line-height: 1.4em;
+}
+
+/*** Floating elements ***/
+.wrapper {
+  background: #fff;
+  max-width: 960px;
+  /* center horizontally */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* float the image left and text in front of it */
+.floating-element {
+  float: left;
+  margin: 10px;
+}
+
+.service h2,
+.service p {
+  color: #999;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.service {
+  float: left;
+  background: #eee;
+  width: 29.33%;
+  margin: 1%;
+  padding: 1%;
+  height: 140px;
+}
+
+/*** Clearing floats ***/
+.content {
+  background: pink;
+  padding: 10px;
+  /* restart normal document flow after the floats are set */
+  /* clear: left / right / both */
+  clear: both;
+  margin-top: 20px;
+}
+
+/* creates this style to scope the floating elements to the normal document flow */
+/* styles insert an empty content at the end of the services element styled */
+.services:after {
+  /* content: "hello"; */
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*** Floating Columns ***/

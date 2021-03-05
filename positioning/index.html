@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- **** Box Model **** -->
+    <h1>Box model</h1>
+    <!-- p default has display block, on top of the other -->
+    <!-- block take all the width available -->
+    <p class="box-model">Test</p>
+    <p class="box-model">Test</p>
+    <!-- a default has display inline -->
+    <!-- inline just takes the space of the element, same line -->
+    <a href="" class="box-model">test</a>
+    <a href="" class="box-model">test</a>
+    <hr />
+
+    <!-- **** Normal document **** -->
+    <h1>Normal document</h1>
+    <!-- blocks are on top of the others -->
+    <p class="normal-document">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro excepturi
+      magnam reprehenderit modi distinctio facilis assumenda minus amet, fugit
+      unde atque quae, harum earum optio nihil inventore ea? Vel, facere.
+    </p>
+    <p class="normal-document">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro excepturi
+      magnam reprehenderit modi distinctio facilis assumenda minus amet, fugit
+      unde atque quae, harum earum optio nihil inventore ea? Vel, facere.
+    </p>
+    <hr />
+
+    <!-- **** Floating elements **** -->
+    <h1>Floating elements</h1>
+    <div class="wrapper">
+      <!--  -->
+      <img src="cloud.jpg" class="floating-element" style="width: 150px" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae officiis
+        veritatis quasi natus eveniet labore iure accusamus. Eaque ratione eos
+        itaque asperiores, velit tenetur nulla ipsum. Repudiandae quisquam
+        blanditiis dolorem? Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Aliquid reprehenderit repellat quisquam, in perspiciatis ipsum
+        tenetur ex nostrum pariatur itaque id? Odio animi nemo libero mollitia
+        sed doloribus laborum reiciendis.
+      </p>
+
+      <div class="services">
+        <div class="service">
+          <h2>Service 1</h2>
+          <p>This is service 1</p>
+        </div>
+        <div class="service">
+          <h2>Service 2</h2>
+          <p>This is service 2</p>
+        </div>
+        <div class="service">
+          <h2>Service 3</h2>
+          <p>This is service 3</p>
+        </div>
+        <!-- .service:after place -->
+      </div>
+      <div class="content">
+        <h2>Content</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+          nobis, voluptates vero eos dolores sequi amet, eveniet, libero fugiat
+          animi nam ut id consequuntur expedita alias quas illum placeat natus.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
