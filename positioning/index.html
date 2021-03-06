@@ -8,36 +8,54 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- **** Box Model **** -->
-    <h1>Box model</h1>
-    <!-- p default has display block, on top of the other -->
-    <!-- block take all the width available -->
-    <p class="box-model">Test</p>
-    <p class="box-model">Test</p>
-    <!-- a default has display inline -->
-    <!-- inline just takes the space of the element, same line -->
-    <a href="" class="box-model">test</a>
-    <a href="" class="box-model">test</a>
-    <hr />
+    <!-- **** Position fixed **** -->
+    <nav>
+      <ul>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+      </ul>
+    </nav>
 
-    <!-- **** Normal document **** -->
-    <h1>Normal document</h1>
-    <!-- blocks are on top of the others -->
-    <p class="normal-document">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro excepturi
-      magnam reprehenderit modi distinctio facilis assumenda minus amet, fugit
-      unde atque quae, harum earum optio nihil inventore ea? Vel, facere.
-    </p>
-    <p class="normal-document">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro excepturi
-      magnam reprehenderit modi distinctio facilis assumenda minus amet, fugit
-      unde atque quae, harum earum optio nihil inventore ea? Vel, facere.
-    </p>
-    <hr />
-
-    <!-- **** Floating elements **** -->
-    <h1>Floating elements</h1>
     <div class="wrapper">
+      <!-- Position absolute -->
+      <div id="banner">
+        <img src="./cloud.jpg" width="100%" />
+        <h2>Blue sky Thinking</h2>
+      </div>
+
+      <!-- **** Box Model **** -->
+      <h1>Box model</h1>
+      <!-- p default has display block, on top of the other -->
+      <!-- block take all the width available -->
+      <p class="box-model">Test</p>
+      <p class="box-model">Test</p>
+      <!-- a default has display inline -->
+      <!-- inline just takes the space of the element, same line -->
+      <a href="" class="box-model">test</a>
+      <a href="" class="box-model">test</a>
+      <hr />
+
+      <!-- **** Normal document **** -->
+      <h1>Normal document</h1>
+      <!-- blocks are on top of the others -->
+      <p class="normal-document">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
+        excepturi magnam reprehenderit modi distinctio facilis assumenda minus
+        amet, fugit unde atque quae, harum earum optio nihil inventore ea? Vel,
+        facere.
+      </p>
+      <p class="normal-document">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
+        excepturi magnam reprehenderit modi distinctio facilis assumenda minus
+        amet, fugit unde atque quae, harum earum optio nihil inventore ea? Vel,
+        facere.
+      </p>
+      <hr />
+
+      <!-- **** Floating elements **** -->
+      <h1>Floating elements</h1>
       <!--  -->
       <img src="cloud.jpg" class="floating-element" style="width: 150px" />
       <p>
@@ -72,6 +90,48 @@
           nobis, voluptates vero eos dolores sequi amet, eveniet, libero fugiat
           animi nam ut id consequuntur expedita alias quas illum placeat natus.
         </p>
+      </div>
+      <!-- **** Floating columns **** -->
+      <h1>Floating columns</h1>
+      <div class="columns">
+        <section>
+          <h2>Column 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint culpa
+            repudiandae nemo sit aperiam. Voluptatum, culpa rerum tenetur totam
+            dolore reiciendis amet a doloribus qui ullam suscipit delectus alias
+            cupiditate! Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Dignissimos vel nesciunt maxime dolorem consectetur a nobis
+            sit, tenetur odio laudantium aliquam nam ipsa, autem amet tempore
+            molestias? Nulla, quod vel?
+          </p>
+        </section>
+        <aside>
+          <h2>Column 2</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio
+            odio eligendi, quo consequatur quidem dolores id ut, ratione rerum
+            nemo quas, animi corrupti veritatis officiis similique! Perspiciatis
+            quas atque laborum.
+          </p>
+          <img src="./cloud.jpg" width="100%" />
+        </aside>
+        <div class="text-columns">
+          <h2>Text columns</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            eveniet iure recusandae, distinctio facere velit culpa
+            reprehenderit? Amet, officiis, commodi natus pariatur reprehenderit
+            dolorem maxime nemo sed delectus esse quas. Lorem ipsum dolor sit,
+            amet consectetur adipisicing elit. Pariatur aut corporis modi,
+            voluptate sed fugiat dicta repudiandae ex tenetur vel facilis
+            praesentium consequatur, incidunt deserunt est, quas et numquam
+            quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
+            officiis, dolores accusantium eaque excepturi totam aut
+            reprehenderit cupiditate laboriosam ab dolorum consequatur iste
+            pariatur ad exercitationem eius aliquid dolor repudiandae.
+          </p>
+        </div>
       </div>
     </div>
   </body>
